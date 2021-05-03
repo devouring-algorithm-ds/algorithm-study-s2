@@ -2,40 +2,41 @@
 
 > 스터디 관련해서 너무나도 좋은 [포스트](https://gmlwjd9405.github.io/2018/05/14/how-to-study-algorithms.html)가 있어서 참고했습니다.
 
-## 정기모임
-**모임 일정**
-- 매주 월요일 오후 9시(JST) @ Discord
-
 <details>
-<summary><b>모임 규칙</b></summary>
+<summary><b>정기모임 일정/규칙</b></summary>
 <ul>
-    <li><b>개인</b></li>
+    <li><b>모임 일정</b></li>
     <ul>
-        <li>공통 주제에 대한 내용을 공부하고 정리한다 (각자 방식에 따라서 정리).</li>
-        <li>주제와 관련된 동일한 [알고리즘 문제](https://www.acmicpc.net)를 풀고 github에 공유한다.</li>
-        <li>정해진 조원의 코드에 대한 피드백을 주석으로 달아 github에 올린다.</li>
-        <ul>
-            <li> [사다리타기](https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=사다리타기&oquery=사다리타&tqi=h4%2Bo7sprvTossAlz%2FXossssssgd-442946)로 페어를 랜덤으로 결정.</li>
-        </ul>
-        <li>자신의 코드에 대한 피드백을 확인하고 수정하여 github에 올린다.</li>
-    </ul> 
-    <li><b>스터디</b></li>
+        <li>매주 월요일 오후 9시(JST) @ Discord</li>
+    </ul>
+    <li><b>모임 규칙</b></li>
     <ul>
-        <li>공통 주제 정리한 내용 간단히 공유.</li>
-        <li>문제 풀이 피드백</li>
+        <li><b>개인</b></li>
         <ul>
-            <li>왜 이런 피드백을 주었는지 또는 받았는지 궁금하거나,</li>
-            <li>어떤 피드백을 받았고 어떻게 수정했는지 공유</li>
+            <li>공통 주제에 대한 내용을 공부하고 정리한다 (각자 방식에 따라서 정리).</li>
+            <li>주제와 관련된 동일한 [알고리즘 문제](https://www.acmicpc.net)를 풀고 github에 공유한다.</li>
+            <li>정해진 조원의 코드에 대한 피드백을 주석으로 달아 github에 올린다.</li>
+            <ul>
+                <li> [사다리타기](https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=사다리타기&oquery=사다리타&tqi=h4%2Bo7sprvTossAlz%2FXossssssgd-442946)로 페어를 랜덤으로 결정.</li>
+            </ul>
+            <li>자신의 코드에 대한 피드백을 확인하고 수정하여 github에 올린다.</li>
         </ul>
-        <li>해당 알고리즘 문제를 푸는 좋은 방법에 대해 공유</li>
+        <li><b>스터디</b></li>
+        <ul>
+            <li>공통 주제 정리한 내용 간단히 공유.</li>
+            <li>문제 풀이 피드백</li>
+            <ul>
+                <li>왜 이런 피드백을 주었는지 또는 받았는지 궁금하거나,</li>
+                <li>어떤 피드백을 받았고 어떻게 수정했는지 공유</li>
+            </ul>
+            <li>해당 알고리즘 문제를 푸는 좋은 방법에 대해 공유</li>
+        </ul>
     </ul>
 </ul>
 </details>
 
-
-## 공부법
 <details>
-<summary> 펼치기 </summary>
+<summary> <b>공부법</b> </summary>
 <ol>
     <li>공통 주제를 공부하고 이해한다.</li>
     <li>주제와 관련된 알고리즘 문제를 풀어본다.</li>
