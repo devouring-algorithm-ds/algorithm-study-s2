@@ -3,8 +3,9 @@
 ### 주제: 복잡도와 자료형 
 - [https://blog.encrypted.gg/922](https://blog.encrypted.gg/922)
 
-### 문제집
-- [week0 - 맛보기](https://www.acmicpc.net/workbook/view/7780)
+### 문제
+- [백준: week0 문제집](https://www.acmicpc.net/workbook/view/7780)
+- [AtCoder: ABC126 A문제](https://atcoder.jp/contests/abc126/tasks/abc126_a)
 
 ## 다음 모임 전 까지 할 일
 
@@ -33,3 +34,40 @@
 - 풀이를 참고해서 푼 문제도 본인이 해결했다고 생각한다.
 - 프로그래밍을 많이 하는 것도 중요하지만 생각을 많이 하는 것이 중요하다.
 - 자신의 풀이에 대한 회고와 더 좋은 풀이 방법을 찾는 것이 중요하다.
+
+## 시작하기
+
+1-1. 리포지토리 클론 후 스터디 회차로 브랜치 이동:
+```zsh
+$ git clone git@github.com:devouring-algorithm-ds/algorithm-study-s2.git
+$ cd algorithm-study-s2
+$ git checkout s2/week0c
+```
+
+1-2. 이미 클론을 한 경우 브랜치 fetch하고 해당 브랜치로 이동.
+```zsh
+$ git fetch && git checkout s2/week0
+```
+ 
+2. `s2/week0` 브랜치 이동 후, 해당 회차의 디렉토리로 이동.
+```zsh
+$ cd week0 
+```
+
+3. 본인 이름의 디렉토리를 생성.
+```zsh
+$ mkdir eubug
+```
+
+## 파일 생성 규칙
+- 자료구조 구현의 경우, 해당 자료구조 이름의 디렉토리를 생성 한 후 진행.
+```zsh
+$ cd eubug
+$ mkdir stack
+$ cd stack
+$ touch main.cpp stack.{h,cpp} # 등등... 
+```
+- 문제풀이의 경우 문제 번호를 이름으로 생성하고 진행.
+```zsh
+$ cd eubug
+$ touch 2557.cpp ## 각자 사용하는 언어로 진행해주세요.
