@@ -4,11 +4,7 @@
 - [https://blog.encrypted.gg/922](https://blog.encrypted.gg/922)
 
 ### 문제집
-> github에 올리는 코드로 코드리뷰/피드백이 진행됩니다. 온라인 저지에 제출했던 코드와는 개발 코드라고 생각하고 달리 코딩스타일, 가이드라인 등등, 정리해서 올려주시면 상대방이 리뷰하는데 도움이 됩니다.
-
 - [week0 - 맛보기](https://www.acmicpc.net/workbook/view/7780)
-
----
 
 ## 다음 모임 전 까지 할 일
 
