@@ -14,10 +14,10 @@
         <li><b>개인</b></li>
         <ul>
             <li>공통 주제에 대한 내용을 공부하고 정리한다 (각자 방식에 따라서 정리).</li>
-            <li>주제와 관련된 동일한 [알고리즘 문제](https://www.acmicpc.net)를 풀고 github에 공유한다.</li>
+            <li>주제와 관련된 동일한 <a href="https://www.acmicpc.net">알고리즘 문제</a>를 풀고 github에 공유한다.</li>
             <li>정해진 조원의 코드에 대한 피드백을 주석으로 달아 github에 올린다.</li>
             <ul>
-                <li> [사다리타기](https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=사다리타기&oquery=사다리타&tqi=h4%2Bo7sprvTossAlz%2FXossssssgd-442946)로 페어를 랜덤으로 결정.</li>
+                <li> <a href="https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=사다리타기&oquery=사다리타&tqi=h4%2Bo7sprvTossAlz%2FXossssssgd-442946">사다리타기</a>로 페어를 랜덤으로 결정.</li>
             </ul>
             <li>자신의 코드에 대한 피드백을 확인하고 수정하여 github에 올린다.</li>
         </ul>
