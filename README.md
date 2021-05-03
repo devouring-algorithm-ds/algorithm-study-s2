@@ -6,22 +6,36 @@
 **모임 일정**
 - 매주 월요일 오후 9시(JST) @ Discord
 
-**모임 규칙**
-- **개인**
-  + 공통 주제에 대한 내용을 공부하고 정리한다 (각자 방식에 따라서 정리).
-  + 주제와 관련된 동일한 [알고리즘 문제](https://www.acmicpc.net)를 풀고 github에 공유한다. 
-  + 정해진 조원의 코드에 대한 피드백을 주석으로 달아 github에 올린다.
-    + [사다리타기](https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=사다리타기&oquery=사다리타&tqi=h4%2Bo7sprvTossAlz%2FXossssssgd-442946)로 페어를 랜덤으로 결정.
-  + 자신의 코드에 대한 피드백을 확인하고 수정하여 github에 올린다.
+<details>
+<summary><b>모임 규칙</b></summary>
+<ul>
+    <li><b>개인</b></li>
+    <ul>
+        <li>공통 주제에 대한 내용을 공부하고 정리한다 (각자 방식에 따라서 정리).</li>
+        <li>주제와 관련된 동일한 [알고리즘 문제](https://www.acmicpc.net)를 풀고 github에 공유한다.</li>
+        <li>정해진 조원의 코드에 대한 피드백을 주석으로 달아 github에 올린다.</li>
+        <ul>
+            <li> [사다리타기](https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query=사다리타기&oquery=사다리타&tqi=h4%2Bo7sprvTossAlz%2FXossssssgd-442946)로 페어를 랜덤으로 결정.</li>
+        </ul>
+        <li>자신의 코드에 대한 피드백을 확인하고 수정하여 github에 올린다.</li>
+    </ul> 
+    <li><b>스터디</b></li>
+    <ul>
+        <li>공통 주제 정리한 내용 간단히 공유.</li>
+        <li>문제 풀이 피드백</li>
+        <ul>
+            <li>왜 이런 피드백을 주었는지 또는 받았는지 궁금하거나,</li>
+            <li>어떤 피드백을 받았고 어떻게 수정했는지 공유</li>
+        </ul>
+        <li>해당 알고리즘 문제를 푸는 좋은 방법에 대해 공유</li>
+    </ul>
+</ul>
+</details>
 
-- **정기 모임** 
-  + 공통 주제 정리한 내용 간단히 공유.
-  + 문제 풀이 피드백
-    - 왜 이런 피드백을 주었는지 또는 받았는지 궁금하거나,
-    - 어떤 피드백을 받았고 어떻게 수정했는지 공유
-  + 해당 알고리즘 문제를 푸는 좋은 방법에 대해 공유
 
 ## 공부법
+<details>
+<summary> 펼치기 </summary>
 <ol>
     <li>공통 주제를 공부하고 이해한다.</li>
     <li>주제와 관련된 알고리즘 문제를 풀어본다.</li>
@@ -47,3 +61,4 @@
 - 풀이를 참고해서 푼 문제도 본인이 해결했다고 생각한다.
 - 프로그래밍을 많이 하는 것도 중요하지만 생각을 많이 하는 것이 중요하다.
 - 자신의 풀이에 대한 회고와 더 좋은 풀이 방법을 찾는 것이 중요하다.
+</details>
