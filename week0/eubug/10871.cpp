@@ -7,13 +7,15 @@ using namespace std;
 
 int main(void) {
   int N, X, num;
+  // O(1)
   cin >> N >> X;
 
+  // O(N)
   for(int i=0; i<N; ++i) {
+    // O(1)
     cin >> num;
-    if(num < X) {
-      cout << num << ' ';
-    }
+    // O(1)
+    if(num < X) cout << num << ' ';
   }
 
   return 0;
