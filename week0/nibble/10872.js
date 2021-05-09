@@ -14,6 +14,7 @@ function s(total, limit, numbers) {
     })
 
     // solved filter
+    // O(N)
     const answer = numbers.filter(num => num < limit);
 
     console.log(answer.join(' '));
