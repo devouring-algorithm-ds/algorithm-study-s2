@@ -2,6 +2,8 @@
 
 #pragma warning(disable: 4996)
 
+// 시간복잡도 : O(logN)
+
 int cnt[10];
 
 void solve(int current) {
