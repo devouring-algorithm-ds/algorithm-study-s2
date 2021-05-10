@@ -66,7 +66,6 @@
 </details>
 
 ## 시작하기
-
 1-1. 해당 repository를 fork한다.
 
 1-2. fork한 repo를 클론하고 스터디 회차로 브랜치 이동:
