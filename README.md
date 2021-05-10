@@ -53,8 +53,8 @@
     </ul>
     <li> 1,2,3번 후에 다시 문제를 풀어본다.</li>
     <ul>
-        <li>그래도 모르겠으면 1번부터 반복한다.</li>
-        <li>그래도 안되면 놀거나, 쉬거나, 산책을 가거나 한 다음, 다른 문제를 풀어본다.</li>
+        <li>모르겠으면 다시 풀이를 본다.</li>
+        <li>그래도 모르겠으면 게임을 하거나, 책을 읽거나, 산책을 가거나, 다른 행동을 한 후, 다른 문제를 풀어본다.</li>
     </ul>
 </ol>
 
@@ -66,15 +66,16 @@
 </details>
 
 ## 시작하기
+1-1. 해당 repository를 fork한다.
 
-1-1. 리포지토리 클론 후 스터디 회차로 브랜치 이동:
+1-2. fork한 repo를 클론하고 스터디 회차로 브랜치 이동:
 ```zsh
-$ git clone git@github.com:devouring-algorithm-ds/algorithm-study-s2.git
+$ git clone git@github.com:devouring-algorithm-ds/algorithm-study-s2.git # fork한 리포
 $ cd algorithm-study-s2
-$ git checkout s2/week0c
+$ git checkout s2/week0
 ```
 
-1-2. 이미 클론을 한 경우 브랜치 fetch하고 해당 브랜치로 이동.
+1-3. 이미 클론을 한 경우 브랜치 fetch하고 해당 브랜치로 이동.
 ```zsh
 $ git fetch && git checkout s2/week0
 ```
