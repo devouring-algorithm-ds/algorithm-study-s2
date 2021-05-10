@@ -54,7 +54,7 @@ void count(int* arr)
     }
 }
 
-//러리님의 개쩌는 재귀 풀이
+//러리님의 아름다운 재귀 풀이
 /*
 #include <cstdio>
 

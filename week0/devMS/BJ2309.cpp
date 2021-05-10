@@ -1,4 +1,4 @@
-//O(n^2): selection sort가 O(n^2)입니다. n은 input array size.
+//O(n^2): selection sort is always O(n^2). n is input array size.
 
 #include <iostream>
 #include <vector>
