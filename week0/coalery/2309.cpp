@@ -6,6 +6,8 @@
 
 using namespace std;
 
+// 시간복잡도 : O(1) ..? O(N) ...??
+
 vector<int> vec(9);
 
 int sumExclude(int a, int b) {

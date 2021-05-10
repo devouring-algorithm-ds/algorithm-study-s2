@@ -2,6 +2,8 @@
 
 #pragma warning(disable: 4996)
 
+// 시간복잡도 : O(N)
+
 int main(void) {
 	int N, K;
 	scanf("%d %d", &N, &K);
