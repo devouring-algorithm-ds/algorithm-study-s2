@@ -1,5 +1,5 @@
 /*
-* ¾ËÆÄºª°³¼ö: O(n)
+* Alphabet Problem : O(n)
 * https://www.acmicpc.net/problem/10808
 */
 #include <iostream>

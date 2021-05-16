@@ -1,5 +1,5 @@
 /*
-* 개수세기: O(n)
+* Count Problem: O(n)
 * https://www.acmicpc.net/problem/10807
 */
 #include <iostream>
