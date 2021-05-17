@@ -4,9 +4,9 @@
 
 using namespace std;
 
-// �׽�Ʈ ���̽��� ������ N�̶�� �ϰ�, �� ���ڿ��� ���̸� M�̶�� �� ��,
-// �ð� ���⵵ : O(N * MlogM)
-// std::sort �� �ð� ���⵵�� O(NlogN) �̹Ƿ�.
+// 테스트 케이스의 개수를 N이라고 하고, 각 문자열의 길이를 M이라고 할 때,
+// 시간 복잡도 : O(N * MlogM)
+// std::sort 의 시간 복잡도가 O(NlogN) 이므로.
 
 int main(void) {
 	int N;

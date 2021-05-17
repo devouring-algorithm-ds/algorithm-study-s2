@@ -2,7 +2,7 @@
 
 #pragma warning(disable: 4996)
 
-// ½Ã°£º¹Àâµµ : O(1)
+// ì‹œê°„ë³µì¡ë„ : O(1)
 
 int main(void) {
 	int A, B;

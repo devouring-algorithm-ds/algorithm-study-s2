@@ -5,7 +5,7 @@ using namespace std;
 
 #pragma warning(disable: 4996)
 
-// ½Ã°£º¹Àâµµ : O(N)
+// ì‹œê°„ë³µì¡ë„ : O(N)
 
 int main(void) {
 	int arr[26] = {0};

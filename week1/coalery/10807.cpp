@@ -4,7 +4,7 @@
 
 using namespace std;
 
-// ½Ã°£º¹Àâµµ : O(N)
+// ì‹œê°„ë³µì¡ë„ : O(N)
 
 int main(void) {
 	int N;
