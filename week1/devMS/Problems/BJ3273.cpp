@@ -1,6 +1,6 @@
-/*
-* µÎ¼öÀÇ ÇÕ:https://www.acmicpc.net/problem/3273
-* O(n): sortºÎºĞ Á¦¿ÜÇÏ°í ¹®Á¦ÇØ°áÀ» À§ÇØ ±¸ÇöÇÑ 2 pointer ¾Ë°í¸®Áò ÀÚÃ¼´Â ¿ø¼ÒÀÇ °³¼ö¸¸Å­¸¸ Á¢±ÙÇÏ±â¶§¹®¿¡
+ï»¿/*
+* ë‘ìˆ˜ì˜ í•©:https://www.acmicpc.net/problem/3273
+* O(n): sortë¶€ë¶„ ì œì™¸í•˜ê³  ë¬¸ì œí•´ê²°ì„ ìœ„í•´ êµ¬í˜„í•œ 2 pointer ì•Œê³ ë¦¬ì¦˜ ìì²´ëŠ” ì›ì†Œì˜ ê°œìˆ˜ë§Œí¼ë§Œ ì ‘ê·¼í•˜ê¸°ë•Œë¬¸ì—
 */
 #include <iostream>
 #include <algorithm>
@@ -23,8 +23,8 @@ int main()
 
 	//Initialize
 	int cnt = 0;
-	int left = 0;//¹è¿­ÀÇ Ã³À½À¸·Î ÃÊ±âÈ­
-	int right = length-1;//¹è¿­ÀÇ ³¡À¸·Î ÃÊ±âÈ­
+	int left = 0;//ë°°ì—´ì˜ ì²˜ìŒìœ¼ë¡œ ì´ˆê¸°í™”
+	int right = length-1;//ë°°ì—´ì˜ ëìœ¼ë¡œ ì´ˆê¸°í™”
 
 	sort(input, input + length);
 
@@ -51,3 +51,37 @@ int main()
 
 	return 0;
 }
+
+//ë˜ ì—„ì²­ ê¹”ë”í•œ ëŸ¬ë¦¬ë‹˜ í’€ì´
+/*
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+bool numsExists[1000001];
+
+int main(void) {
+	int n;
+	cin >> n;
+
+	for (int i = 0; i < n; i++) {
+		int tmp;
+		cin >> tmp;
+		numsExists[tmp] = true;
+	}
+
+	int x;
+	cin >> x;
+
+	int cnt = 0;
+	for (int i = 1; i <= x; i++) {
+		if (numsExists[i] && numsExists[x - i]) {
+			cnt++;
+		}
+	}
+	cout << cnt / 2 << endl;
+
+	return 0;
+}
+*/

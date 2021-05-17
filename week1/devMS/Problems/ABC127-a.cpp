@@ -13,7 +13,7 @@ int main()
 	cin >> old;
 	cin >> cost;
 
-	if (old > 13 || old == 13)
+	if (old >= 13)
 	{
 		cout << cost;
 	}
