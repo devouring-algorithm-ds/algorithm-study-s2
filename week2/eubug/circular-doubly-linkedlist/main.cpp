@@ -4,13 +4,14 @@ using namespace std;
 #include "CDList.hpp"
 
 int main(void) {
-  int op=1, data;
+  int op=1, data, idx;
 
   CDList<int> list;
 
   while(op>=0) {
     cout << "1. pushBack          2. pushFront" << endl;
     cout << "3. popBack           4. popFront" << endl;
+    cout << "5. insertAt          6. removeAt" << endl;
     cout << "0. print" << endl;
     cout << "> (-1 to quit) ";
     cin >> op;
@@ -37,6 +38,20 @@ int main(void) {
       }
       case 4: {
         cout << "Popped: " << list.popFront() << endl;
+        list.print();
+        break;
+      }
+      case 5: {
+        cout << "Insert [DATA] at which [INDEX]? (0-based):  ";
+        cin >> data >> idx;
+        list.insertAt(idx, data);
+        list.print();
+        break;
+      }
+      case 6: {
+        cout << "remove data at which [INDEX]? (0-based): ";
+        cin >> idx;
+        list.removeAt(idx);
         list.print();
         break;
       }

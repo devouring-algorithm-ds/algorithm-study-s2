@@ -45,8 +45,8 @@ class CDList {
     T popBack(void);
     T popFront(void);
 
-    void insertAt(int idx, T data);
-    void removeAt(int indx);
+    void insertAt(int index, T data);
+    T removeAt(int index);
 
     void print(void);
 };
@@ -112,6 +112,10 @@ void CDList<T>::pushBack(T data) {
   ++size;
 }
 
+/*********************************************/
+/***************** pushFront *****************/
+/*  Inserts a data in the beginning          */
+/*********************************************/
 template <typename T>
 void CDList<T>::pushFront(T data) {
   Node<T> *newNode = new Node<T>(data);
@@ -123,6 +127,10 @@ void CDList<T>::pushFront(T data) {
   ++size;
 }
 
+/*********************************************/
+/****************** popBack ******************/
+/*         removes the last element          */
+/*********************************************/
 template <typename T>
 T CDList<T>::popBack(void) {
   if(size==0) {
@@ -140,6 +148,10 @@ T CDList<T>::popBack(void) {
   return data;
 }
 
+/*********************************************/
+/***************** popFront ******************/
+/*         removes the head element          */
+/*********************************************/
 template <typename T>
 T CDList<T>::popFront(void) {
   if(size==0) {
@@ -150,6 +162,52 @@ T CDList<T>::popFront(void) {
   Node<T> *temp = dummyHead->next;
   temp->prev->next = temp->next;
   temp->next->prev = temp->prev;
+  int data = temp->data;
+  delete temp;
+  --size;
+
+  return data;
+}
+
+/*********************************************/
+/***************** insertAt ******************/
+/*    inserts a data at a given idx          */
+/*    idx starts at 0                        */
+/*********************************************/
+template <typename T>
+void CDList<T>::insertAt(int idx, T data) {
+  if(idx<=0) pushFront(data);
+  else if(idx>=size) pushBack(data);
+  else {
+    Node<T> *temp = dummyHead->next;
+    while(--idx) temp = temp->next;
+
+    Node<T> *newNode = new Node(data);
+    temp->next->prev = newNode;
+    newNode->next = temp->next;
+    newNode->prev = temp;
+    temp->next = newNode;
+
+    ++size;
+  }
+}
+
+/*********************************************/
+/***************** removeAt ******************/
+/*    remoes a data at a given idx          */
+/*    idx starts at 0                        */
+/*********************************************/
+template <typename T>
+T CDList<T>::removeAt(int index) {
+  if(index<=0) return popFront();
+  if(index>=size) return popBack();
+
+  Node<T> *temp = dummyHead->next;
+  while(index--) temp = temp->next;
+
+  temp->prev->next = temp->next;
+  temp->next->prev = temp->prev;
+
   int data = temp->data;
   delete temp;
   --size;
