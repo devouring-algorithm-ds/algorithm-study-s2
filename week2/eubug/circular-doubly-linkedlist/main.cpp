@@ -4,9 +4,9 @@ using namespace std;
 #include "CDList.hpp"
 
 int main(void) {
-  int op=1, data, idx;
-
-  CDList<int> list;
+  int op=1, idx;
+  string data;
+  CDList<string> list;
 
   while(op>=0) {
     cout << "1. pushBack          2. pushFront" << endl;
