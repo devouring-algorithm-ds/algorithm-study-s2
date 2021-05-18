@@ -57,17 +57,11 @@ class CDList {
 /*********************************************/
 template <typename T>
 CDList<T>::CDList(void) {
-  dummyHead = dummyTail = new Node(T(NULL));
-  dummyHead->next = dummyHead->prev = dummyTail;
-  dummyTail->next = dummyTail->prev = dummyHead;
-
-  size = 0;
-}
-
-template <>
-CDList<string>::CDList(void) {
-  string t = "";
-  dummyHead = dummyTail = new Node(t);
+  if constexpr (is_same<T, string>::value) {
+    dummyHead = dummyTail = new Node(string(""));
+  } else {
+    dummyHead = dummyTail = new Node(T(NULL));
+  }
   dummyHead->next = dummyHead->prev = dummyTail;
   dummyTail->next = dummyTail->prev = dummyHead;
 
@@ -79,25 +73,15 @@ CDList<string>::CDList(void) {
 /*********************************************/
 template <typename T>
 CDList<T>::CDList(T data) {
-  dummyHead = dummyTail = new Node(T(NULL));
+  if constexpr (is_same<T, string>::value) {
+    dummyHead = dummyTail = new Node(string(""));
+  } else {
+    dummyHead = dummyTail = new Node(T(NULL));
+  }
   dummyHead->next = dummyHead->prev = dummyTail;
   dummyTail->next = dummyTail->prev = dummyHead;
 
   Node<T> *newNode = new Node<T>(data);
-  link(dummyHead, newNode);
-  link(newNode, dummyTail);
-
-  size = 1;
-}
-
-template <>
-CDList<string>::CDList(string data) {
-  string t = "";
-  dummyHead = dummyTail = new Node(t);
-  dummyHead->next = dummyHead->prev = dummyTail;
-  dummyTail->next = dummyTail->prev = dummyHead;
-
-  Node<string> *newNode = new Node<string>(data);
   link(dummyHead, newNode);
   link(newNode, dummyTail);
 
@@ -144,11 +128,7 @@ T CDList<T>::delink(Node<T> *&curr) {
 /*********************************************/
 template <typename T>
 void CDList<T>::pushBack(T data) {
-  Node<T> *newNode = new Node<T>(data);
-  link(dummyTail->prev, newNode);
-  link(newNode, dummyTail);
-
-  ++size;
+  insertAt(size, data);
 }
 
 /*********************************************/
@@ -157,11 +137,7 @@ void CDList<T>::pushBack(T data) {
 /*********************************************/
 template <typename T>
 void CDList<T>::pushFront(T data) {
-  Node<T> *newNode = new Node<T>(data);
-  link(newNode, dummyHead->next);
-  link(dummyHead, newNode);
-
-  ++size;
+  insertAt(0, data);
 }
 
 /*********************************************/
@@ -170,32 +146,7 @@ void CDList<T>::pushFront(T data) {
 /*********************************************/
 template <typename T>
 T CDList<T>::popBack(void) {
-  if(size==0) {
-    cerr << "List is empty..." << endl;
-    return -1;
-  }
-
-  Node<T> *temp = dummyTail->prev;
-  T data = delink(temp);
-  delete temp;
-  --size;
-
-  return data;
-}
-
-template <>
-string CDList<string>::popBack(void) {
-  if(size==0) {
-    cerr << "List is empty..." << endl;
-    return "";
-  }
-
-  Node<string> *temp = dummyTail->prev;
-  string data = delink(temp);
-  delete temp;
-  --size;
-
-  return data;
+  return removeAt(size-1);
 }
 
 /*********************************************/
@@ -204,32 +155,7 @@ string CDList<string>::popBack(void) {
 /*********************************************/
 template <typename T>
 T CDList<T>::popFront(void) {
-  if(size==0) {
-    cerr << "List is empty..." << endl;
-    return -1;
-  }
-
-  Node<T> *temp = dummyHead->next;
-  T data = delink(temp);
-  delete temp;
-  --size;
-
-  return data;
-}
-
-template <>
-string CDList<string>::popFront(void) {
-  if(size==0) {
-    cerr << "List is empty..." << endl;
-    return "";
-  }
-
-  Node<string> *temp = dummyHead->next;
-  string data = delink(temp);
-  delete temp;
-  --size;
-
-  return data;
+  return removeAt(0);
 }
 
 /*********************************************/
@@ -239,18 +165,17 @@ string CDList<string>::popFront(void) {
 /*********************************************/
 template <typename T>
 void CDList<T>::insertAt(int idx, T data) {
-  if(idx<=0) pushFront(data);
-  else if(idx>=size) pushBack(data);
-  else {
-    Node<T> *temp = dummyHead->next;
-    while(--idx) temp = temp->next;
+  idx = (idx < 0) ? 0 : (idx >= size) ? size : idx;
 
-    Node<T> *newNode = new Node(data);
-    link(newNode, temp->next);
-    link(temp, newNode);
+  Node<T> *temp = dummyHead;
+  while(idx>0) temp = temp->next, --idx;
 
-    ++size;
-  }
+  Node<T> *newNode = new Node(data);
+
+  link(newNode, temp->next);
+  link(temp, newNode);
+
+  ++size;
 }
 
 /*********************************************/
@@ -259,12 +184,20 @@ void CDList<T>::insertAt(int idx, T data) {
 /*    idx starts at 0                        */
 /*********************************************/
 template <typename T>
-T CDList<T>::removeAt(int index) {
-  if(index<=0) return popFront();
-  if(index>=size) return popBack();
+T CDList<T>::removeAt(int idx) {
+  if(size==0) {
+    cerr << "List is empty..." << endl;
 
+    if constexpr (is_same<T, string>::value) {
+      return "";
+    } else {
+      return -1;
+    }
+  }
+
+  idx = (idx < 0) ? 0 : (idx >= size) ? size-1 : idx;
   Node<T> *temp = dummyHead->next;
-  while(index--) temp = temp->next;
+  while(idx>0) temp = temp->next, --idx;
 
   T data = delink(temp);
   delete temp;
