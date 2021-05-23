@@ -10,6 +10,7 @@
  */
 class Solution {
 public:
+    // 시간복잡도 : O(N)
     ListNode* removeElements(ListNode* head, int val) {
         if(head == nullptr) { // Length == 0
             return nullptr;
