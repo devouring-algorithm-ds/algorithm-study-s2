@@ -24,18 +24,17 @@ public:
 
         if (size == 2)
         {
-            for (int i = 0; i < 2; i++)//swap_val array에 값저장
-            {
-                swap_val[i] = iterNode->val;
-                iterNode = iterNode->next;
-            }
+            //swap_val array에 값저장
+            swap_val[0] = iterNode->val;
+            iterNode = iterNode->next;
+            swap_val[1] = iterNode->val;
 
             iterNode = head;
-            for (int i = 0; i < 2; i++)//저장한 값을 기반으로 swap
-            {
-                iterNode->val = swap_val[1 - i];
-                iterNode = iterNode->next;
-            }
+            //저장한 값을 기반으로 swap
+            iterNode->val = swap_val[1];
+            iterNode = iterNode->next;
+            iterNode->val = swap_val[0];
+
             return head;
         }
 

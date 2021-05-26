@@ -17,7 +17,7 @@ public:
         ListNode* iterNode = head;
         int size = 0;
 
-        //input size 찾기
+        //Get input size
         while (iterNode != nullptr)
         {
             size++;
@@ -28,7 +28,7 @@ public:
         int* input = new int[size];
         iterNode = head;
 
-        //input array에 리스트 val 넣기
+        //put list val to the input array
         for (int i = 0; i < size; i++)
         {
             input[i] = iterNode->val;
