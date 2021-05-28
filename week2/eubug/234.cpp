@@ -1,6 +1,6 @@
-/**
- * Runtime: 216 ms, faster than 35.63% of C++
- * Memory Usage: 118.3 MB, less than 49.17% of C++ 
+/** 
+ * Runtime: 152 ms, faster than 97.77% of C++ 
+ * Memory Usage: 110.4 MB, less than 91.73% of C++ 
 */
 
 /**
@@ -13,6 +13,41 @@
  *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
+class Solution {
+public:
+    bool isPalindrome(ListNode* head) {
+        if(!head->next) return true;
+        
+        ListNode *rev=nullptr, *sNext;
+        ListNode *slow, *fast;
+        slow = fast = head;
+        
+        while(fast != nullptr) {
+            if(!fast->next) {
+                slow = slow->next; 
+                break;
+            }
+            
+            fast = fast->next->next;
+            sNext = slow->next;
+            slow->next = rev;
+            rev = slow;
+            slow = sNext;
+        }
+        
+        while(rev && slow)
+            if(rev->val != slow->val) return false;
+            else rev=rev->next, slow=slow->next;
+        
+        return true;
+    }
+};
+
+#if 0
+/**
+ * Runtime: 216 ms, faster than 35.63% of C++
+ * Memory Usage: 118.3 MB, less than 49.17% of C++ 
+*/
 class Solution {
   public:
     bool isPalindrome(ListNode* head) {
@@ -30,3 +65,4 @@ class Solution {
       return 1;     
     }
 };
+#endif
