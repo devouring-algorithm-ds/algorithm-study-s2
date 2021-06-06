@@ -5,9 +5,9 @@
 
 ### 문제
 - Leetcode
-- [70. Climbing Stais](https://leetcode.com/problems/climbing-stairs/)
-- [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)
-- [1700. Number of Students Unable to Eat Lunch](https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/)
+- [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+- [1021. Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/)
+- Bonus: [155. Min Stack](https://leetcode.com/problems/min-stack/)
 
 ## 다음 모임 전 까지 할 일
 
