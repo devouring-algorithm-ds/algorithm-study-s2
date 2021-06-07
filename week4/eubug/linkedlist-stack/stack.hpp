@@ -57,12 +57,6 @@ Stack::~Stack() {
 }
 
 void Stack::push(int data) {
-  if(!top) {
-    top = new Node(data);
-    size = 1;
-    return;
-  }
-
   Node *newNode = new Node(data);
   newNode->next = top;
   top = newNode;
