@@ -1,4 +1,5 @@
 #include <vector>
+#include <climits>
 
 class MinStack {
 private:
@@ -31,7 +32,7 @@ public:
     
     // Time Complexity : O(N)
     int getMin() {
-        int min = ((1 << 30) - 1) * 2 + 1; // Prevent Overflow
+        int min = INT_MAX;
         for(int i=0; i<cursor; i++)
             if(v[i] < min) min = v[i];
         return min;

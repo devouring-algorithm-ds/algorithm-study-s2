@@ -25,7 +25,6 @@ public:
             }
         }
         
-        if(!S.empty()) return false;
-        return true;
+        return S.empty();
     }
 };

@@ -23,9 +23,7 @@ Stack<T>::Stack() {
 template <typename T>
 void Stack<T>::push(T data) {
 	Node<T>* newNode = new Node<T>(data);
-	if(this->length > 0) {
-		newNode->next = this->head;
-	}
+	newNode->next = this->head;
 	this->head = newNode;
 	this->length++;
 }
