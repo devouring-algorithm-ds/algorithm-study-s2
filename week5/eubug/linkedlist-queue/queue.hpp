@@ -74,7 +74,6 @@ int Queue::dequeue(void) {
   Node *temp = front;
   front = front->next;
   delete temp;
-  temp = nullptr;
   --size;
   return data;
 }
