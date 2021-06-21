@@ -1,26 +1,25 @@
-## Week 4
+## Week 7
 
-### 주제: 스택 (Stack)
-- [https://blog.encrypted.gg/933](https://blog.encrypted.gg/933)
+### 주제: 이진 트리 (Binary Tree)
 
-### 문제
-- Leetcode
-- [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
-- [1021. Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/)
-- Bonus: [155. Min Stack](https://leetcode.com/problems/min-stack/)
+### 문제 (Leetcode)
+- 이진 트리
+  - [617. Merge Two Binary Trees](https://leetcode.com/problems/merge-two-binary-trees/)
+- 트리 순회하기
+  - [94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/)
+  - [144. Binary Tree Preorder Traversal](https://leetcode.com/problems/binary-tree-preorder-traversal/)
+  - [965. Univalued Binary Tree](https://leetcode.com/problems/univalued-binary-tree/)
+
 
 ## 다음 모임 전 까지 할 일
 
 ### 개인
-+ 스택의 내용을 공부하고 정리한다. 
-  + 연결리스트로 스택 구현하기
-    - `push(data)`
-    - `pop()`
-    - `peek()`
-  + Bonus: 배열로 스택 구현하기
-  + 스택 관련 문제를 Leetcode에서 풀고 github에 공유한다.
-  + 파트너 조원의 코드를 리뷰한다.
-  + 본인의 피드백을 확인하고 수정하여 github에 올린다.
++ 이진 트리(Binary tree)를 공부하고 정리한다. 
+  + 이진 트리를 구현한다.
+  + **Bonus**: 이진 탐색 트리(Binary Search Tree)를 구현해본다 [문제](https://leetcode.com/problems/search-in-a-binary-search-tree/).
++ 이진 트리 관련 문제를 Leetcode에서 풀고 github에 공유한다.
++ 파트너 조원의 코드를 리뷰한다.
++ 본인의 피드백을 확인하고 수정하여 github에 올린다.
 
 ### 공부법
   1. 공통 주제를 공부하고 이해한다.
