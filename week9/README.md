@@ -3,7 +3,8 @@
 ### 주제: 그래프 (Graph)
 
 ### 문제
-- 나중에! 
+- [1791. Find Center of Star Graph](https://leetcode.com/problems/find-center-of-star-graph/)
+- [997. Find the town judge](https://leetcode.com/problems/find-the-town-judge/) 
 
 ## 다음 모임 전 까지 할 일
 
